@@ -1,0 +1,30 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #1a1c2e;
+  --bg2: #222438;
+  --bg3: #2d3050;
+  --border: #3d4166;
+  --text: #f0f2ff;
+  --muted: #9ba3c9;
+  --blue: #5b8dee;
+  --blue-dim: #1e2d5a;
+  --green: #4ade80;
+  --radius: 10px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', system-ui, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root { height: 100vh; }
+
+input, button, select { font-family: inherit; outline: none; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
