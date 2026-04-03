@@ -5,16 +5,25 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
-app.use(cors());
-
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://live-chat-room-psi.vercel.app",
+  ],
+  credentials: true
+}));
 
 
 const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "http://localhost:3001"],
+    origin: [
+      "http://localhost:5173",
+      "https://live-chat-room-psi.vercel.app",
+    ],
     methods: ["GET", "POST"],
+    credentials: true
   },
 });
 
