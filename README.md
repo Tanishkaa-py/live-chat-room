@@ -10,8 +10,8 @@ A real-time chat application built with **Socket.io**, **Node.js/Express**, and 
 
 | Service | URL |
 |---|---|
-| Frontend (Vercel) (https://live-chat-room-psi.vercel.app/)
-| Backend (Render) (https://live-chat-room-y46y.onrender.com)
+| Frontend (Vercel) | (https://live-chat-room-psi.vercel.app/) |
+| Backend (Render)  |(https://live-chat-room-y46y.onrender.com) |
 
 
 ---
