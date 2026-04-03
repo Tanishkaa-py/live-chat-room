@@ -7,13 +7,7 @@ const path = require("path");
 const app = express();
 app.use(cors());
 
-// In production, serve the built React app
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "../client/dist")));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../client/dist/index.html"));
-  });
-}
+
 
 const server = http.createServer(app);
 
